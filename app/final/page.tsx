@@ -31,15 +31,23 @@ export default function Page() {
 </select>
 <br />
 
-<div className="ml-5 mt-5 text-xl text-pink-200">Choose Your Product Size:
+<div className="ml-5 mt-5 text-xl text-pink-200">Select Retail Size:
 <br/>
-  <input type="radio" id="1 oz" name="fav_language" value="1 oz" />
+  <input type="radio" id="1 oz" name="size" value="1 oz" />
   <label htmlFor="1 oz">1 oz</label><br />
-  <input type="radio" id="4 oz" name="fav_language" value="4 oz" />
+  <input type="radio" id="4 oz" name="size" value="4 oz" />
   <label htmlFor="4 oz">4 oz</label><br />
-  <input type="radio" id="8 oz" name="fav_language" value="8 oz" />
+  <input type="radio" id="8 oz" name="size" value="8 oz" />
   <label htmlFor="8 oz">8 oz</label>
   </div>
+  <br />
+
+  <label htmlFor="skin concern" className="mx-5 text-xl text-pink-200">Choose Product Rating:</label>
+<select name="rating" id="rating">
+  <option value="below">Below 3 Stars</option>
+  <option value="over">Over 3 Stars</option>
+  <option value="full">5 stars</option>
+</select>
 
   <div className="ml-5 mt-5 text-xl text-pink-200">
   <input type="checkbox" id="coupon" name="coupon" value="Coupon" />
@@ -48,7 +56,7 @@ export default function Page() {
   <label htmlFor="member"> I am a member</label><br />
   </div>
 <br />
-        <button className="ml-10 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900" type="submit">Save</button>
+        <button className="ml-10 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900" type="submit">Check the Price</button>
       </form>
       </>
     );
