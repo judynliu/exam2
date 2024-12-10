@@ -1,35 +1,37 @@
 export default function Page() {
     return (
       <>
-      <h1 className="text-3xl ml-5">Final Exam</h1>
+      <h1 className="my-5 text-2xl font-extrabold text-center text-pink-400">Our Skincare Products</h1>
       <form>
-        <label htmlFor="product" className="ml-5">Product Description</label>
+        <label htmlFor="product" className="ml-5 text-xl text-pink-200">Skin Care Product Effect:</label>
         <input type="text" name="product" id="product" className="m-5 text-black 
-        bg-yellow-400" />
+        bg-pink-200" />
         <br/>
-        <label htmlFor="cars" className="mx-5">Choose a car:</label>
 
-<select name="cars" id="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="mercedes">Mercedes</option>
-  <option value="audi">Audi</option>
+<label htmlFor="products" className="mx-5 text-xl text-pink-200">Select a Skincare Product:</label>
+<select name="products" id="products">
+  <option value="cream">Cream</option>
+  <option value="serum">Serum</option>
+  <option value="cleanser">Cleanser</option>
+  <option value="eye cream">Eye Cream</option>
 </select>
 <br />
-<div className="ml-5 mt-5">
-  <input type="radio" id="html" name="fav_language" value="HTML" />
-  <label htmlFor="html">HTML</label><br />
-  <input type="radio" id="css" name="fav_language" value="CSS" />
-  <label htmlFor="css">CSS</label><br />
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript" />
-  <label htmlFor="javascript">JavaScript</label>
+
+<div className="ml-5 mt-5 text-xl text-pink-200">Choose Your Product Size:
+<br/>
+  <input type="radio" id="1 oz" name="fav_language" value="1 oz" />
+  <label htmlFor="1 oz">1 oz</label><br />
+  <input type="radio" id="4 oz" name="fav_language" value="4 oz" />
+  <label htmlFor="4 oz">4 oz</label><br />
+  <input type="radio" id="8 oz" name="fav_language" value="8 oz" />
+  <label htmlFor="8 oz">8 oz</label>
   </div>
 
-  <div className="ml-5 mt-5">
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
-  <label htmlFor="vehicle1"> I have a bike</label><br />
-  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
-  <label htmlFor="vehicle2"> I have a car</label><br />
+  <div className="ml-5 mt-5 text-xl text-pink-200">
+  <input type="checkbox" id="coupon" name="coupon" value="Coupon" />
+  <label htmlFor="coupon"> I have a coupon</label><br />
+  <input type="checkbox" id="member" name="member" value="Member" />
+  <label htmlFor="member"> I am a member</label><br />
   </div>
 <br />
         <button className="ml-10 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900" type="submit">Save</button>
