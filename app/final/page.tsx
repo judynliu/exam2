@@ -3,17 +3,31 @@ export default function Page() {
       <>
       <h1 className="my-5 text-2xl font-extrabold text-center text-pink-400">Our Skincare Products</h1>
       <form>
-        <label htmlFor="product" className="ml-5 text-xl text-pink-200">Skin Care Product Effect:</label>
+        <label htmlFor="product" className="ml-5 text-xl text-pink-200">Browse Products:</label>
         <input type="text" name="product" id="product" className="m-5 text-black 
         bg-pink-200" />
         <br/>
-
-<label htmlFor="products" className="mx-5 text-xl text-pink-200">Select a Skincare Product:</label>
-<select name="products" id="products">
+        
+<label htmlFor="product type" className="mx-5 text-xl text-pink-200">Select Product Type:</label>
+<select name="type" id="type">
   <option value="cream">Cream</option>
   <option value="serum">Serum</option>
   <option value="cleanser">Cleanser</option>
   <option value="eye cream">Eye Cream</option>
+</select>
+<label htmlFor="skin type" className="mx-5 text-xl text-pink-200">Select Skin Type:</label>
+<select name="type" id="type">
+  <option value="sensitive skin">Sensitive Skin</option>
+  <option value="oily skin">Oily Skin</option>
+  <option value="dry skin">Dry Skin</option>
+  <option value="combination skin">Combination Skin</option>
+</select>
+<label htmlFor="skin concern" className="mx-5 text-xl text-pink-200">Select Skin Concern:</label>
+<select name="concern" id="concern">
+  <option value="redness">Redness</option>
+  <option value="lack of hydration">Lack of Hydration</option>
+  <option value="signs of aging">Signs of Aging</option>
+  <option value="large pores">Large Pores</option>
 </select>
 <br />
 
