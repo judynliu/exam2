@@ -31,14 +31,14 @@ export default function Page() {
 </select>
 <br />
 
-<div className="ml-5 mt-5 text-xl text-pink-200">Select Retail Size:
+<div className="ml-5 mt-5 text-xl text-pink-200">Retail Size:
 <br/>
   <input type="radio" id="1 oz" name="size" value="1 oz" />
-  <label htmlFor="1 oz">1 oz</label><br />
+  <label htmlFor="1 oz"> 1 oz</label><br />
   <input type="radio" id="4 oz" name="size" value="4 oz" />
-  <label htmlFor="4 oz">4 oz</label><br />
+  <label htmlFor="4 oz"> 4 oz</label><br />
   <input type="radio" id="8 oz" name="size" value="8 oz" />
-  <label htmlFor="8 oz">8 oz</label>
+  <label htmlFor="8 oz"> 8 oz</label>
   </div>
   <br />
 
@@ -49,14 +49,25 @@ export default function Page() {
   <option value="full">5 stars</option>
 </select>
 
-  <div className="ml-5 mt-5 text-xl text-pink-200">
-  <input type="checkbox" id="coupon" name="coupon" value="Coupon" />
-  <label htmlFor="coupon"> I have a coupon</label><br />
-  <input type="checkbox" id="member" name="member" value="Member" />
-  <label htmlFor="member"> I am a member</label><br />
+<h3 className="ml-5 mt-5 text-xl text-pink-200">Key Ingredients:</h3>
+  <div className="ml-5 text-xl text-pink-200">
+  <input type="checkbox" id="Ingredients" name="Ingredients" value="Niacinamide" />
+  <label htmlFor="niacinamide"> Niacinamide</label><br />
+  <input type="checkbox" id="Ingredients" name="Ingredients" value="Panthenol" />
+  <label htmlFor="panthenol"> Panthenol</label><br />
+  <input type="checkbox" id="Ingredients" name="Ingredients" value="Hyaluronic Acid" />
+  <label htmlFor="hyaluronic"> Hyaluronic Acid</label><br />
+  <input type="checkbox" id="Ingredients" name="Ingredients" value="Retinol" />
+  <label htmlFor="retinol"> Retinol</label><br />
+  <input type="checkbox" id="Ingredients" name="Ingredients" value="Vitamin C" />
+  <label htmlFor="vitamin"> Vitamin C</label><br />
+  <input type="checkbox" id="Ingredients" name="Ingredients" value="Ceramides" />
+  <label htmlFor="ceramides"> Ceramides</label><br />
   </div>
 <br />
-        <button className="ml-10 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900" type="submit">Check the Price</button>
+
+<button className="ml-8 text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 shadow-lg shadow-pink-500/50 dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-ml px-5 py-2.5 text-center me-2 mb-2">Submit</button>
+
       </form>
       </>
     );
